@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>KARIMNAGAR DISTRICT - CHIGURUMAMIDI MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>KARIMNAGAR DISTRICT</h1>
+<h2>CHIGURUMAMIDI MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!-- 1 -->
+<div class="place">
+<div class="left">
+<div class="icon">🚌</div>
+<div class="info">
+<h3>KRN-CM-Bus Stop</h3>
+<p>Bus Stop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23754,79.19488" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+<div class="left">
+<div class="icon">⛽</div>
+<div class="info">
+<h3>KRN-CM-Indian Oil</h3>
+<p>Petrol Pump</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.24635,79.19224" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+<div class="info">
+<h3>KRN-CM-Venu Fast Food</h3>
+<p>Restaurant</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23973,79.19425" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏦</div>
+<div class="info">
+<h3>KRN-CM-Andhra Bank</h3>
+<p>Bank</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23562,79.19567" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏥</div>
+<div class="info">
+<h3>KRN-CM-Anjali Clinic</h3>
+<p>Clinic</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23786,79.19486" target="_blank">Open Map</a>
+</div>
+
+<!-- 6 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>KRN-CM-Venu Mee Seva</h3>
+<p>Mee Seva</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23873,79.19507" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+<div class="info">
+<h3>KRN-CM-Sri Mahalaxmi Function Hall</h3>
+<p>Function Hall</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.24495,79.19136" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛒</div>
+<div class="info">
+<h3>KRN-CM-Ration Shop</h3>
+<p>Ration Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23561,79.19674" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏥</div>
+<div class="info">
+<h3>KRN-CM-Govt. Primary Hospital</h3>
+<p>Hospital</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23915,79.19388" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>KRN-CM-BRS Party Office</h3>
+<p>Party Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23914,79.19469" target="_blank">Open Map</a>
+</div>
+
+<!-- 11 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+<div class="info">
+<h3>KRN-CM-Ramalayam Temple</h3>
+<p>Temple</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23781,79.19524" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏬</div>
+<div class="info">
+<h3>KRN-CM-Warehouse</h3>
+<p>Warehouse</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23518,79.19795" target="_blank">Open Map</a>
+</div>
+  
