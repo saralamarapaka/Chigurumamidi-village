@@ -297,4 +297,179 @@ onkeyup="searchPlaces()">
 </div>
 <a class="open-btn" href="https://www.google.com/maps?q=18.23518,79.19795" target="_blank">Open Map</a>
 </div>
-  
+ <!-- 13 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>KRN-CM-Sai Krupa Mee Seva</h3>
+<p>Mee Seva</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23771,79.1954" target="_blank">Open Map</a>
+</div>
+
+<!-- 14 -->
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+<div class="info">
+<h3>KRN-CM-Amrutha Tiffins</h3>
+<p>Tiffin Center</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23874,79.19469" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>KRN-CM-Office</h3>
+<p>Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.235,79.19816" target="_blank">Open Map</a>
+</div>
+
+<!-- 16 -->
+<div class="place">
+<div class="left">
+<div class="icon">💡</div>
+<div class="info">
+<h3>KRN-CM-JACKS Electrical & Pumping</h3>
+<p>Electrical Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.2343,79.19719" target="_blank">Open Map</a>
+</div>
+
+<!-- 17 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>KRN-CM-Kalyani Laxmi</h3>
+<p>Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23596,79.19442" target="_blank">Open Map</a>
+</div>
+
+<!-- 18 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛍️</div>
+<div class="info">
+<h3>KRN-CM-Renuka Yellamma Shop</h3>
+<p>Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23627,79.19903" target="_blank">Open Map</a>
+</div>
+
+<!-- 19 -->
+<div class="place">
+<div class="left">
+<div class="icon">🥐</div>
+<div class="info">
+<h3>KRN-CM-Sensational Bakery</h3>
+<p>Bakery</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23737,79.198" target="_blank">Open Map</a>
+</div>
+
+<!-- 20 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏘️</div>
+<div class="info">
+<h3>KRN-CM-Grama Panchayat</h3>
+<p>Grama Panchayat</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23765,79.19851" target="_blank">Open Map</a>
+</div>
+
+<!-- 21 -->
+<div class="place">
+<div class="left">
+<div class="icon">💊</div>
+<div class="info">
+<h3>KRN-CM-Ventakasai Medical & General Store</h3>
+<p>Medical Store</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.24004,79.19693" target="_blank">Open Map</a>
+</div>
+
+<!-- 22 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+<div class="info">
+<h3>KRN-CM-Beerappa Temple</h3>
+<p>Temple</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.24504,79.18748" target="_blank">Open Map</a>
+</div>
+
+<!-- 23 -->
+<div class="place">
+<div class="left">
+<div class="icon">⛪</div>
+<div class="info">
+<h3>KRN-CM-Faith Life Church</h3>
+<p>Church</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.23136,79.19688" target="_blank">Open Map</a>
+</div>
+
+<!-- 24 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+<div class="info">
+<h3>KRN-CM-Tahsildar Office</h3>
+<p>Tahasildar Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.24118,79.20726" target="_blank">Open Map</a>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Karimnagar District - Chigurumamidi Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+
+function searchPlaces(){
+
+let input=document.getElementById("search").value.toLowerCase();
+let places=document.getElementsByClassName("place");
+
+for(let i=0;i<places.length;i++){
+
+let text=places[i].innerText.toLowerCase();
+
+if(text.indexOf(input)>-1){
+places[i].style.display="flex";
+}else{
+places[i].style.display="none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html> 
